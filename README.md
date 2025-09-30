@@ -1,1 +1,1 @@
-This is a line from RStudio.
+Repo for the HTML site accompanying to my Zotero workshop.

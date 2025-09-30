@@ -13,6 +13,7 @@ format:
     toc-location: left
     link-external-icon: true
     link-external-newwindow: true
+    output-file: "index.html"
 editor: visual
 resources: 
   - caseA.zip
