@@ -9,16 +9,26 @@ format:
   html:
     toc: true
     toc-title: Contents
-    toc-depth: 2
+    toc-depth: 3
     toc-location: left
     link-external-icon: true
     link-external-newwindow: true
     output-file: "index.html"
 editor: visual
+engine: knitr
 resources: 
   - caseA.zip
 nocite: "@*"
-bibliography: references.bib
+bibliography:
+  suggested: ref/suggested.bib
+  hallmarks: ref/hallmarks.bib
+  case2A: ref/case2A.bib
+  case2B: ref/case2B.bib
+  case2C: ref/case2C.bib
+filters:
+  - multibib
+validate-yaml: false
+anchor-sections: false
 ---
 
 ## Objectives
@@ -97,10 +107,6 @@ References can be added to Zotero in many different ways. The mission for this a
 
 When you first boot up Zotero it will look something like this:
 
-::: aside
-A more thorough overview of Zotero features can be found in its [Documentation](https://www.zotero.org/support/start).
-:::
-
 ![](images/intro.png)
 
 The center pane is where your list of references will appear (once you have some). On the left is the ***Collections Pane***, which shows the ***collections*** ![](images/collection.png){height="20"} you create (which are a lot like folders in your file manager), as well as some default special collections (like "My Publications"). On the bottom left is the *Tag Selector*. ***Tags*** ![](images/tags.png){height="20"} are a different way of categorizing references, more akin to keywords, although you can define and set your own. On the right is the ***Item Pane***, which shows specific information about the reference selected.
@@ -123,15 +129,19 @@ To create a collection, you can click the ***New Collection...*** icon ![](image
 
 ***Tags*** ![](images/tags.png){height="20"} are much like tags anywhere else, short labels which often describe content in the form of keywords. You can click on tags in the Tag Selector in the bottom right to filter your library by those tags. Imports from PubMed and certain journal websites can bring with them keywords automatically. You can also manually add custom tags to an item by navigating to the ***Tags*** ![](images/tags.png){height="20"} icon in the Item Pane.
 
+Without further ado, the cases:[A more thorough overview of Zotero features can be found in its [Documentation](https://www.zotero.org/support/start).]{.aside}
+
+### Cases for Activity #2
+
 :::: {.callout-note collapse="true"}
-### Case A: Importing from PDFs (click to expand)
+#### Case A: Importing from PDFs (click to expand)
 
 > *You're preparing for your QE and you've been sent a bunch of "very important literature" to review by your mentor in the form of email attachments. They are all PDFs of a range of topics and item types. Find a way to import them into Zotero (with their citation metadata) and organize them intelligently.*
 >
-> [Click here to download caseA.zip.](caseA.zip)
+> [Click here to download caseA.zip (`r paste(ceiling(file.size("caseA.zip")/(1000 * 1000)), "MB")`).](caseA.zip)
 
 ::: callout-tip
-#### Green flag criteria:
+##### Green flag criteria:
 
 Raise the green flag when *everyone at your table* has:
 
@@ -140,13 +150,13 @@ Raise the green flag when *everyone at your table* has:
 -   at least some are in a collection and/or have a tag
 :::
 
-#### Tips for Case A:
+##### Tips for Case A:
 
 Zotero is good at importing PDFs, and can often acquire their metadata automatically. The simplest way to import PDFs is to drag them from your file manager to the center pane. Alternatively, you can click the ***Add Attachment*** icon ![](images/add-attachment.png){width="19" height="20"} at the top left of the center pane.
 
 Zotero will *usually* be able to create a parent item with the appropriate metadata from the PDF automatically, but not always. In this case, the attachment will not have a parent item, i.e., it will be "naked", without any bibliographic data attached to it. This is perfectly okay, but if you want to add metadata or make the item citable, you will need to get the info from another source (like a website) or create an item with the appropriate data manually (the ***New Item*** icon ![](images/add-item.png){width="19" height="20"} at the top left of the center pane). Dragging the attachment into that new item will pair it to that item.
 
-#### Discussion points:
+##### Discussion points:
 
 -   Does Zotero automatically handle some types PDFs better than others?
 -   What options might you try if a PDF does not import appropriately?
@@ -155,14 +165,14 @@ Zotero will *usually* be able to create a parent item with the appropriate metad
 ::::
 
 :::: {.callout-note collapse="true"}
-### Case B: Importing from PubMed (click to expand)
+#### Case B: Importing from PubMed (click to expand)
 
 > *You're drafting a review and your PI has marked it up with many comments and track changes. In their comments they often mention papers your should reference, referred to only by their PubMed ID (PMID). Find a way to import them into Zotero (with their citation metadata) and organize them intelligently.*
 >
 > The compiled PMIDs: 24934519, 25159158, 25682101, 25702159, 25865002, 26025621, 26212266, 26246354
 
 ::: callout-tip
-#### Green flag criteria:
+##### Green flag criteria:
 
 Raise the green flag when *everyone at your table* has:
 
@@ -170,11 +180,11 @@ Raise the green flag when *everyone at your table* has:
 -   at least some are in a collection and/or have a (manually added) tag
 :::
 
-#### Tips for Case B:
+##### Tips for Case B:
 
 Zotero is good at importing articles by identifiers like DOIs or, in this case, PMIDs. The ***Add Item(s) by Identifier*** icon ![](images/add-by-identifier.png){width="19" height="20"} (magic wand at the top left of the center pane) is an easy way to add items by identifier. It can even handle multiple IDs at once if they are separated by commas.
 
-#### Discussion points:
+##### Discussion points:
 
 -   Does Zotero import the PDF along with the metadata?
 -   Are there any peculiarities of the metadata, e.g., tags, imported from PubMed?
@@ -182,7 +192,7 @@ Zotero is good at importing articles by identifiers like DOIs or, in this case, 
 ::::
 
 :::: {.callout-note collapse="true"}
-### Case C: Importing from web links (click to expand)
+#### Case C: Importing from web links (click to expand)
 
 > *You're enjoying your Saturday when your PI sends you an email with no subject line or body text, just a bunch of URLs to some recently published journal articles. Find a way to import them into Zotero (with their citation metadata) and organize them intelligently.*
 >
@@ -193,7 +203,7 @@ Zotero is good at importing articles by identifiers like DOIs or, in this case, 
 > [https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giaf078/8232624](https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giaf078/8232624?login=false&utm_source=advanceaccess&utm_campaign=gigascience&utm_medium=email){.uri}
 
 ::: callout-tip
-#### Green flag criteria:
+##### Green flag criteria:
 
 Raise the green flag when *everyone at your table* has:
 
@@ -201,7 +211,7 @@ Raise the green flag when *everyone at your table* has:
 -   at least some are in a collection and/or have a tag
 :::
 
-#### Tips for Case C:
+##### Tips for Case C:
 
 Zotero imports from web links using a browser plugin called ***Zotero Connector***, which you can install from the Zotero website along with the program itself. Connector uses scripts called *translators* to extract item metadata from a variety of websites. The translators work very well on the sites where most biomedical research is published, including PubMed and those of Springer-Nature, ScienceDirect, Wiley, and many more.
 
@@ -209,7 +219,7 @@ Zotero Connector works best if you pin it to the toolbar of your browser. In its
 
 Zotero will *try* to add the PDF as well. In my experience, ensuring that you already have access to the article—say, though OpenAthens—*before* you click the icon is the best way to guarantee the PDF comes along. If that fails, you can download the PDF separately and attach it to the item via the "Add Attachment" option.
 
-#### Discussion points:
+##### Discussion points:
 
 -   Can you think of any websites or otherwise unconventional reference items you may want to add to your library? How does Zotero Connector fare in adding them to Zotero?
 -   What happens if you're on [a website with *multiple* reference items linked](https://journals.asm.org/toc/mbio/current)?
@@ -218,13 +228,13 @@ Zotero will *try* to add the PDF as well. In my experience, ensuring that you al
 
 Overall, Zotero is robust at importing many types of items from many types of sources. While different methods have their own nuances, just do whatever makes you most likely to actually add items. If you like, go ahead and drag all the PDFs from your personal literature collection into the center pane; Zotero can take it.
 
-## Activity #2.5: 10 Minute Break {.unlisted}
+## Activity #2.5: 10-Minute Break {.unlisted}
 
 🏖️
 
 ## Activity #3: Annotating and Note-Taking
 
-Saving papers is great, but it pays to read a few from time to time. Taking notes while reading is a simple but effective way of distilling the information in an article into the few key takeaways which matter to you. Those notes then serve as a valuable reference when you want to refer back to something you've read, but don't remember all the details; it's like teleporting your mind back to when you had just read it (without actually needing to reread it).
+Saving papers is great, but it pays to read a few from time to time. Taking notes while reading is a simple but effective way of distilling the information in an article into the few key takeaways which matter to you. Those notes then serve as a valuable reminders when you want to refer back to something you've read, but don't remember all the details; it's like teleporting your mind back to when you had just read it (without actually needing to reread it).
 
 Let's say you wanted to highlight certain key passages or figures of a review you really like, or cap off each article you read with a one or two-sentence summary of your key takeaway to make it easier to cite later, or collate excerpts from a variety of papers in order to compare their protocols. Zotero has a feature-rich note-taking workflow which allows for all of this and more within the application itself.
 
@@ -242,7 +252,7 @@ Zotero allows you to add ***Annotations*** and mark up PDFs a lot like other PDF
 
 Clicking on the ***Toggle Sidebar*** icon ![](images/sidebar.png){height="20"} at the top left and selecting the ***Show Annotations*** ![](images/view-annotations.png){height="20"} options will show you an overview of all annotations in the document.
 
-Where Zotero can exceed the capabilities of other PDF viewers is in the synergy between annotations and ***Notes***. Notes are a special type of item that can exist by themselves ("standalone notes") or belong to a specific item ("item notes"). To create an item note, select the ***Notes*** icon ![](images/notes.png){height="20"} from the context menu on the right and click the + next to "Item Notes" \> *Add Item Note*:
+Where Zotero can exceed the capabilities of other PDF viewers is in the synergy between annotations and ***Notes***. Notes are a special type of item that can exist by themselves ("standalone notes") or belong to a specific item ("item notes"). To create an item note, select the ***Notes*** icon ![](images/notes.png){height="20"} from the context menu on the right and click the + next to "Item Notes" and select *Add Item Note*:
 
 ![](images/add-note.png)
 
@@ -252,13 +262,21 @@ Notes can contain free-form text as well as content from PDFs such as annotation
 
 Any content from any PDF in your library can be added to any note, so the range of information you can combine with notes is extremely flexible. An item note may contain a series of annotations just from that item along with your own comments, summarizing the main takeaways. In contrast, a standalone note may synthesize content from many sources in a way that makes it easy to reference back to each individual article.
 
+Without further ado, the case:
+
+### Case for Activity #3
+
+lorem ipsum
+
 ## Activity #4: Custom RSS Feed
 
 Imagine if you were, like me, really focused on one thing, like a species of bacteria called *L. reuteri*. You may decide that anytime a new paper mentions *L. reuteri*, you want to know about it. Or that every time your hopefully future-postdoc-lab publishes, you want to be the first to read it. Or that you want to at least read the title of each new review published in *Nature Reviews So-and-So*, in case it interests you. Or any combination of the above. The "Create RSS" feature of PubMed gives you that power, and can integrate with Zotero itself.
 
 This activity is more self-directed. The goal is to create a custom feed based on a PubMed search to help you stay up to date with newly published literature. There is no story problem for this part—it's all up to you.
 
-> *Using the "Create RSS" feature of PubMed search, experiment until you generate a search that feels useful to you.*
+### Case for Activity #4
+
+> *Using the "Create RSS" feature of PubMed search, experiment until you craft a search that feels useful to you.*
 
 ::: callout-tip
 ### Green flag criteria:
@@ -267,7 +285,7 @@ Raise the green flag when *everyone at your table* has:
 
 -   an RSS feed imported into Zotero
 -   they have read an abstract, opened a link, or added an item to their library from their feed
--   they feel the feed may be useful to their work
+-   they think the feed could be practically useful to their work
 :::
 
 ### Tips for Activity #4
@@ -281,7 +299,7 @@ PubMed has different ways to update you of new search hits. It can send you an e
 2\) Search something. Anything will do. The "Advanced" search option makes searching by a specific journal, author, or the like simpler; however, a generic keyword to start off is fine.
 
 ::: aside
-The TMC Library has a [good brief overview](https://libguides.library.tmc.edu/PubMed/Advanced) of the Advanced Search features of PubMed.
+The TMC Library has a [good overview](https://libguides.library.tmc.edu/PubMed/Advanced) of the Advanced Search features of PubMed.
 :::
 
 3\) Click "Create RSS" under the search bar:\
@@ -306,7 +324,7 @@ Under "Advanced Options", I typically change the update frequency to every 24 ho
 ::: {.callout-warning collapse="true"}
 ### A word of warning: too many hits (click to expand)
 
-If you are anything like me, your intellectual eyes are bigger than your stomach. Several feeds, each spawning dozens of new abstracts a day, is likely to result in fatigue; therefore, part of the art of generating an effective feed is appreciating the *volume of hits you will be receiving*. Thankfully, there is an easy way to check this in the redesigned PubMed interface.
+If you are anything like me, your intellectual eyes are bigger than your stomach. Several feeds, each spawning dozens of new abstracts a day, is likely to result in fatigue; therefore, part of the art of crafting an effective feed is appreciating the *volume of hits you will be receiving*. Thankfully, there is an easy way to check this in the redesigned PubMed interface.
 
 In the current version of PubMed, the sidebar shows a histogram of search hits by year. Going back to my *L. reuteri* example, we can see there are 231 hits from the year 2024:
 
@@ -340,11 +358,11 @@ Happy referencing!
 
 ## Acknowledgements {.unlisted}
 
-This workshop was developed as a capstone project for the Biomedical Educator Certificate of Added Qualification (BE-CAQ) program of the Graduate School of Biomedical Sciences at Baylor College of Medicine. I sincerely thank Dr. Blank, Dr. Love, and Dr. Boedeker for their thoughtful instruction, my notes of which were referenced extensively in the preparation of this workshop. I also thank Dr. Wilson-Pham, Lloyd Bronner, and Chris Foster for their supreme patience and flexibility as I completed the program requirements.
+This workshop was developed as a capstone project for the Biomedical Educator Certificate of Added Qualification (BE-CAQ) program of the Graduate School of Biomedical Sciences at Baylor College of Medicine. I sincerely thank Dr. Matthew Blank, Dr. Sherita Love, and Dr. Peter Boedeker for their thoughtful instruction, my notes from which I referenced in the preparation of this workshop. I especially thank Dr. Blank for advice which led to significant improvements in the workshop's flow and formative assessments. I also thank Dr. Marenda Wilson-Pham, Lloyd Bronner, and Chris Foster for their supreme patience and flexibility as I completed the program requirements.
 
-The [Software Carpentry](https://software-carpentry.org/lessons/index.html) workshops I attended at the University of Michigan, led by Dr. Schloss and others, as well as several Zotero-centric conversations with my friend Kevin Jiang, were other major sources of inspiration for the design of this workshop.
+The [Software Carpentry](https://software-carpentry.org/lessons/index.html) workshops I attended at the University of Michigan, led by Dr. Pat Schloss and others, as well as several Zotero-centric conversations with my friend Kevin Jiang, were other major sources of inspiration for the design of this workshop.
 
-This document was authored in RStudio with [Quarto](https://quarto.org/docs/get-started/hello/rstudio.html), which also features Zotero integration!
+This document is hosted on GitHub Pages and was authored in RStudio with [Quarto](https://quarto.org/docs/get-started/hello/rstudio.html), which also features Zotero integration!
 
 ## Activity #???: Bonus Activities for Overachievers & Suggested Topics for Further Exploration {.unlisted}
 
@@ -382,27 +400,43 @@ lorem ipsum
 
 lorem ipsum
 
-### Syncing attachments with Zotero Premium (or other cloud storage)
+### Syncing attachments with Zotero Storage (or other cloud storage)
 
 lorem ipsum
 
-### More elaborate note-taking with Obsidian
+### More sophisticated note-taking with Obsidian
 
 lorem ipsum
 
-### Collaborative collections with Shared Collections
+### Collaborative libraries with Zotero Groups
 
 lorem ipsum
 
 ## References {.unlisted}
 
-::: {.content-hidden when-format="html"}
-[@vandeun2017, @mirzayi2021, @spencer2021]
+Some other useful websites and all the literature used for the cases.[Created—of course—with Zotero.]{.aside}
+
+### Suggested Reading
+
+::: {#refs-suggested}
 :::
 
-::: {#refs}
+### Activity #2
+
+::: {#refs-hallmarks}
 :::
 
-::: aside
-Created with Zotero (although I hope that went without saying!)
+#### Case A
+
+::: {#refs-case2A}
+:::
+
+#### Case B
+
+::: {#refs-case2B}
+:::
+
+#### Case C
+
+::: {#refs-case2C}
 :::
