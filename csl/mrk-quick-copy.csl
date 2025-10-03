@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" class="note" version="1.0" name-form="short" and="symbol" et-al-min="3" et-al-use-first="1">
+  <!-- This style was edited with the Visual CSL Editor (https://editor.citationstyles.org/visualEditor/) -->
+  <info>
+    <title>MRK quick copy</title>
+    <id>mrk-quick-copy</id>
+    <updated>2024-04-03T06:02:52+00:00</updated>
+  </info>
+  <macro name="container-title">
+    <text variable="container-title" form="short"/>
+  </macro>
+  <macro name="publisher">
+    <text variable="publisher" form="short" text-case="title"/>
+  </macro>
+  <macro name="source">
+    <text variable="source" form="short" text-case="title"/>
+  </macro>
+  <macro name="collection-title">
+    <text variable="collection-title" form="short" text-case="title"/>
+  </macro>
+  <citation collapse="citation-number">
+    <layout delimiter=", " prefix="(" suffix=")">
+      <text variable="citation-number"/>
+    </layout>
+  </citation>
+  <bibliography entry-spacing="0">
+    <layout>
+      <group delimiter=", ">
+        <names variable="author">
+          <substitute>
+            <names variable="editor director"/>
+          </substitute>
+        </names>
+        <choose>
+          <if type="article-journal" variable="container-title" match="all">
+            <text macro="container-title"/>
+          </if>
+          <else-if type="article-journal" variable="collection-title" match="all">
+            <text macro="collection-title"/>
+          </else-if>
+          <else-if type="article-magazine" variable="container-title" match="all">
+            <text macro="container-title"/>
+          </else-if>
+          <else-if type="article-magazine" variable="collection-title" match="all">
+            <text macro="collection-title"/>
+          </else-if>
+          <else-if type="article-newspaper" variable="container-title" match="all">
+            <text macro="container-title"/>
+          </else-if>
+          <else-if type="article-newspaper" variable="collection-title" match="all">
+            <text macro="collection-title"/>
+          </else-if>
+          <else-if type="report" variable="container-title" match="all">
+            <text macro="container-title"/>
+          </else-if>
+          <else-if type="report" variable="collection-title" match="all">
+            <text macro="collection-title"/>
+          </else-if>
+          <else-if type="chapter" variable="container-title" match="all">
+            <text macro="container-title"/>
+          </else-if>
+          <else-if type="chapter" variable="collection-title" match="all">
+            <text macro="collection-title"/>
+          </else-if>
+          <else-if type="webpage" variable="container-title" match="all">
+            <text macro="container-title"/>
+          </else-if>
+          <else-if type="webpage" variable="collection-title" match="all">
+            <text macro="collection-title"/>
+          </else-if>
+          <else-if type="post" variable="container-title" match="all">
+            <text macro="container-title"/>
+          </else-if>
+          <else-if type="post" variable="collection-title" match="all">
+            <text macro="collection-title"/>
+          </else-if>
+          <else-if type="post-weblog" variable="container-title" match="all">
+            <text macro="container-title"/>
+          </else-if>
+          <else-if type="post-weblog" variable="collection-title" match="all">
+            <text macro="collection-title"/>
+          </else-if>
+          <else-if type="article" variable="publisher" match="all">
+            <text macro="publisher"/>
+          </else-if>
+          <else-if type="dataset" variable="publisher" match="all">
+            <text macro="publisher"/>
+          </else-if>
+          <else-if type="motion_picture" variable="source" match="all">
+            <text macro="source"/>
+          </else-if>
+          <else-if type="speech">
+            <text term="speech" form="short" text-case="title"/>
+          </else-if>
+          <else-if type="patent">
+            <text term="patent" text-case="title"/>
+          </else-if>
+          <else-if type="thesis">
+            <text term="thesis" form="short" text-case="title"/>
+          </else-if>
+          <else-if type="personal_communication">
+            <text term="personal-communication" text-case="lowercase"/>
+          </else-if>
+          <else-if type="book">
+            <text variable="title" form="short" text-case="title"/>
+          </else-if>
+          <else>
+            <text variable="title" form="short" quotes="false"/>
+          </else>
+        </choose>
+        <date date-parts="year" form="numeric" variable="issued"/>
+      </group>
+    </layout>
+  </bibliography>
+</style>

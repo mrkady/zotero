@@ -18,6 +18,9 @@ editor: visual
 engine: knitr
 resources: 
   - caseA.zip
+  - csl/mrk-quick-copy.csl
+  - csl/mrk-pid.csl
+  - csl/mrk-nature-pmcid.csl
 nocite: "@*"
 bibliography:
   suggested: ref/suggested.bib
@@ -52,12 +55,12 @@ I may also shuffle people around to different tables throughout the workshop.
 
 ## Activity #0: Download Zotero
 
-You will need a computer and to download [Zotero 7](https://www.zotero.org/download/) (available for Windows, MacOS, and Linux). I recommend installing the Zotero Connector browser extension (available for Chrome, Firefox, Edge, and Safari) from the same page as well.
+You will need a computer and to download [Zotero](https://www.zotero.org/download/) (available for Windows, MacOS, and Linux). I recommend installing the Zotero Connector browser extension (available for Chrome, Firefox, Edge, and Safari) from the same page as well.
 
 ::: callout-warning
 ## If you have Zotero 6
 
-If your Zotero has this icon ![](images/old-icon.png){height="20"} as opposed to this one ![](images/new-icon.png){height="20"}, you have an older version of Zotero (alternatively, check the version in Zotero by going to *Zotero* \> *About Zotero* in the menu bar). **Even if you currently have Zotero 6 installed, I would still recommend that you install Zotero 7 for this workshop.** Zotero 7 has [many new features](https://www.zotero.org/blog/zotero-7/) that make it well worth the upgrade.
+If your Zotero has this icon ![](images/old-icon.png){height="20"} as opposed to this one ![](images/new-icon.png){height="20"}, you have an older version of Zotero (alternatively, check the version in Zotero by going to *Zotero* \> *About Zotero* in the menu bar). **Even if you currently have Zotero 6 installed, I would still recommend that you install Zotero 7 or higher for this workshop.** Zotero 7 has [many new features](https://www.zotero.org/blog/zotero-7/) that make it well worth the upgrade.
 :::
 
 ## Activity #1: Pre-Survey and Rationale
@@ -188,7 +191,7 @@ Zotero is good at importing articles by identifiers like DOIs or, in this case, 
 
 -   Does Zotero import the PDF along with the metadata?
 -   Are there any peculiarities of the metadata, e.g., tags, imported from PubMed?
--   If you have the Zotero Connector installed, try importing the same article again from PubMed online or the journal website itself. How similar is the metadata?
+-   If you have the Zotero Connector installed, try importing the same article again from PubMed online or the journal website itself. Is the PDF imported? How similar is the metadata? Does Zotero have a way of mitigating duplicate items?
 ::::
 
 :::: {.callout-note collapse="true"}
@@ -366,41 +369,71 @@ This document is hosted on GitHub Pages and was authored in RStudio with [Quarto
 
 ## Activity #???: Bonus Activities for Overachievers & Suggested Topics for Further Exploration {.unlisted}
 
-What follows is a laundry list of other things Zotero is good for, beyond the scope of this workshop. Feel free to tackle them if you finish the activities early or on your own after the workshop.
+What follows is a laundry list of other things Zotero is good for, beyond the scope of this workshop. Feel free to tackle them if you finish the activities early, find the activities uninspiring, or on your own after the workshop. They progress in roughly increasing order of difficulty and esotericsim.
 
 ### Citing items in Microsoft Word
 
-lorem ipsum
+An obvious and regrettable time-constraint-induced gap in this workshop is the actual citing of references in a word processor like Microsoft Word. Citing in Microsoft Word with Zotero is easy with [the plugin](https://www.zotero.org/support/word_processor_plugin_usage); Zotero even has plugins for [other apps like LibreOffice and Google Docs](https://www.zotero.org/support/word_processor_integration) and integration with other markdown-based systems like R Markdown or Quarto. The plugins are bundled with Zotero itself, so you don't have to download anything extra. In the case of Microsoft Word, a new *Zotero* tab will appear at the end of the ribbon at the top. [The Documentation can help you from there.](https://www.zotero.org/support/word_processor_plugin_usage)
 
-### Creating footnotes in PowerPoint with Quick Copy
-
-lorem ipsum
-
-### More granular filtering with Saved Searches
-
-lorem ipsum
-
-### Simulate a folder with all your PDFs with file manager Saved Searches
-
-lorem ipsum
+Zotero knows how to follow the citation formats of different journals based on a library of Citation Style Language or .csl files. A few styles are loaded by default; all the rest are in the [Zotero Style Repository](https://www.zotero.org/styles), which is also accessible from the Zotero settings (in the menu bar, choose *Zotero* \> *Preferences/Settings...* \> *Cite* \> *Style Manager* \> *Get Additional Styles...*). These styles generally perform "correctly" with common item types that aren't missing metadata. They will likely be good enough for any manuscript submission before meeting the careful eye of the copy editor. Nevertheless, *as a rule I* *always give my automatically generated bibliographies a skim*—you'll be surprised what kinds of garbled metadata make it though the Zotero translators.
 
 ### Hotkeyed and color-coded custom tags
 
-lorem ipsum
+I have a very small set of highly used manual tags: *unread*, *read*, *fav*, etc. By right-clicking on a tag in the tag selector and choosing *Assign Color...* you can [assign a color and number-key hotkey to that tag](https://www.zotero.org/support/collections_and_tags#colored_tags). If an item has a colored tag, a corresponding colored circle will be displayed next to the title in the center panel. Application of the tag can be toggled with the assigned hotkey, making both the scanning and switching of colored tags very fast and convenient.
 
-### Data syncing with a Zotero account
+### Creating footnotes in PowerPoint with Quick Copy and CSL styles
 
-lorem ipsum
+Sometimes you want to cite something in a presentation. I usually see this accomplished with teeny text in the bottom corner. The variety of citation styles used between and within presentations I have seen gives me the impression that most people are crafting them on-the-fly.
+
+There is a better way. [Zotero has a feature](https://www.zotero.org/support/creating_bibliographies#quick_copy) called ***Quick Copy***, which allows for copy-and-paste of simple bibliographies like those found in the bottom corner of a PowerPoint slide. Dragging items or selecting them and pressing Ctrl/Cmd+Shift+C will allow you to paste them anywhere else. The citation style used is dictated in the settings (in the menu bar, choose *Zotero* \> *Preferences/Settings...* \> *Export* \> *Quick Copy* \> *Item Format*). If the publicly available citation style files don't match your preferred format, consider [writing your own](https://www.zotero.org/support/dev/citation_styles/style_editing_step-by-step). Zotero has a built-in .csl editor, but the [CSL Visual Editor](https://editor.citationstyles.org/about/) available online is extremely user-friendly and feature rich.
+
+If your curious, [here is my personal style for Quick Copy](csl/mrk-quick-copy.csl), which follows an `Author(s), Journal Abbreviation, Year` format. I also have [one for Quick Copying identifiers](csl/mrk-pid.csl) (e.g., PMID, DOI) that I use for sharing references with coauthors within Microsoft Word comments, and one not for Quick Copy but which [adds the PMCID to the *Nature* citation style](csl/mrk-nature-pmcid.csl) that I use for NIH grant applications.[A nominal rule for citations in NIH grant applications (in fact, [the *only* rule for citations in NIH grant applications](https://grants.nih.gov/grants-process/write-application/how-to-apply-application-guide/format-attachments#citations)) is inclusion of the PMCID if it exists. With the disclaimer that I have never seen anyone care or get docked for this, it can be accomplished with Zotero. If importing from PubMed or PubMed Central, Zotero will bring in the PM(C)ID into the *Extra* field. For other items, a [Zotero plugin exists](https://github.com/retorquere/zotero-pmcid-fetcher) to add PM(C)IDs automatically upon import/edit or by right-click. A CSL file can [read data from the *Extra* field](https://www.zotero.org/support/kb/item_types_and_fields#citing_fields_from_extra) and thereby include the PMCID if it is present. That is all my custom CSL does; there is [another one available online](https://www.zotero.org/styles?q=id%3Anational-library-of-medicine-grant-proposals).]{.aside}
+
+### More granular filtering with Saved Searches
+
+Sometimes I want to just see all my notes, or all my attachments, or all journal articles which lack a DOI. The [*Advanced Search*](https://www.zotero.org/support/searching#advanced_search) option, accessed by selecting the magnifying glass ![](images/search.png){height="20"} next to the search bar, allows for more fine-tuned searching of your library based on one or multiple parameters. If you would like to repeatedly referenced these search criteria, you can [save an advanced search](https://www.zotero.org/support/searching#saved_searches) as a ***Saved Search*** by choosing the *Save Search* dialog. The saved search ![](images/saved-search.png){width="20"} will then sit below your collections in the collections pane.
+
+### Simulate a folder with all your PDFs with file manager Saved Searches
+
+One thing that I didn't like about Zotero at first, compared to my precious folder with hundreds of PDFs, was that, because of the way Zotero stores attachments, each file is stored in a separate 8-character subfolder within [Zotero's storage folder on your computer](https://www.zotero.org/support/zotero_data). This makes it a bit more cumbersome to retrieve the PDF to, say, email it to a collaborator.
+
+Thankfully, you can created a "Saved Search" in your file manager as well. While the steps will vary depending on the operating system, try searching for all PDFs within the Zotero storage folder and pinning/saving that search to your favorites. This saved search, which can then be further search, does well to approximate the one-big-folder lifestyle.
+
+### Data syncing with a Zotero account and attachment syncing with Zotero Storage (or other cloud storage)
+
+You may have seen a Zotero notification badgering you to [sync your data](https://www.zotero.org/support/sync) by setting up an account. Setting up a Zotero account online and linking it in Zotero (in the menu bar, choose *Zotero* \> *Preferences/Settings...* \> *Sync*) will allow syncing of your items with the ***Zotero Web Library***, allowing you to access the items anywhere.
+
+There is a caveat. The storage limit for a free Zotero account (300 MB) is adequate for your notes and their embedded images, but will run out if you try to sync every attachment. Therefore, I recommend unchecking *Sync full-text content*, *Sync attachment files in My Library using Zotero*, and *Sync attachment files in group libraries using Zotero storage*.
+
+If having not only the bibliographic data but the full-text and/or attachment/annotation data synced online or between multiple devices is valuable to you, consider [paying for Zotero Storage](https://www.zotero.org/storage) or storing the attachments outside of Zotero's storage (e.g., with OneDrive or Google Drive) by means of [Linked Files](https://www.zotero.org/support/attaching_files#stored_files_and_linked_files). I used to do that; however, if you only ever interact with the PDFs on one device it isn't worth it. When the time comes to upgrade computer, moving the library is as easy as [copy and paste](https://www.zotero.org/support/kb/transferring_a_library).
 
 ### Custom file renaming
 
-lorem ipsum
+You may have noticed that if metadata is successfully retrieved with a PDF, Zotero automatically renames the PDF based on the metadata, by default following an `Author(s) - Year - Abbreviated Title.pdf` format. This can be changed. In the menu bar, choose *Zotero* \> *Preferences/Settings...* \> *General* \> *File Renaming* \> *Customize Filename Format...* and follow the rules laid out in [the Documentation](https://www.zotero.org/support/file_renaming).
 
-### Finding related papers with Research Rabbit
+If you're curious, my personal format is:
 
-lorem ipsum
+```         
+{{firstCreator suffix=", "}} 
+{{if journalAbbreviation == ""}} 
+{{publicationTitle suffix=", "}} 
+{{else}} 
+{{journalAbbreviation suffix=", "}} 
+{{endif}} 
+{{if itemType == "preprint"}} 
+{{repository suffix=", "}} 
+{{endif}} 
+{{year suffix=". "}} 
+{{if shortTitle == ""}} 
+{{title truncate="50"}} 
+{{else}} 
+{{shortTitle truncate="50"}} 
+{{endif}}
+```
 
-### Syncing attachments with Zotero Storage (or other cloud storage)
+which results in an `Author(s), Publication, Year. Abbreviated Title.pdf` format.
+
+### Finding related papers with Research Rabbit or Connected Papers
 
 lorem ipsum
 

@@ -1,1 +1,1 @@
-Repo for the HTML site accompanying to my Zotero workshop.
+Repo for the HTML site accompanying my Zotero workshop.
