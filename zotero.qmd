@@ -2,7 +2,8 @@
 title: "Introduction to Reference Management"
 subtitle: "(With Zotero)"
 author: "Mohamed R. Kady<br>kady@bcm.edu"
-date: today
+published-title: "Workshop date"
+date: 2025-12-05
 abstract-title: "In brief"
 abstract: "Follow through the prompts in this document in conjunction with the workshop instructions to get acquainted with what Zotero can do to make your research life easier. This document is meant to be used in conjunction with the in-person workshop, but can also be used independently and referenced back to later. The URL will remain live indefinitely. Follow along to exactly what is covered in the workshop or tackle some of the independent bonus exercises if you'd like."
 format:
@@ -24,10 +25,11 @@ resources:
 nocite: "@*"
 bibliography:
   suggested: ref/suggested.bib
-  hallmarks: ref/hallmarks.bib
+  activity2: ref/activity2.bib
   case2A: ref/case2A.bib
   case2B: ref/case2B.bib
   case2C: ref/case2C.bib
+  activity4: ref/activity4.bib
 filters:
   - multibib
 validate-yaml: false
@@ -43,7 +45,7 @@ At the end of this workshop, and by extension this document, you will be able to
     -   Import references from the internet, PDFs, or PubMed.
     -   Organize references with collections and tags.
     -   Annotate references and take notes.
--   **Design** a custom RSS feed in PubMed for keeping up-to-date with new literature.
+-   **Design** a custom RSS feed in PubMed for keeping up to date with new literature.
 
 ::: callout-tip
 ## The flag system
@@ -132,7 +134,7 @@ To create a collection, you can click the ***New Collection...*** icon ![](image
 
 ***Tags*** ![](images/tags.png){height="20"} are much like tags anywhere else, short labels which often describe content in the form of keywords. You can click on tags in the Tag Selector in the bottom right to filter your library by those tags. Imports from PubMed and certain journal websites can bring with them keywords automatically. You can also manually add custom tags to an item by navigating to the ***Tags*** ![](images/tags.png){height="20"} icon in the Item Pane.
 
-Without further ado, the cases:[A more thorough overview of Zotero features can be found in its [Documentation](https://www.zotero.org/support/start).]{.aside}
+Without further ado, the cases:[A very thorough overview of Zotero features can be found in its [documentation](https://www.zotero.org/support/start).]{.aside}
 
 ### Cases for Activity #2
 
@@ -172,14 +174,14 @@ Zotero will *usually* be able to create a parent item with the appropriate metad
 
 > *You're drafting a review and your PI has marked it up with many comments and track changes. In their comments they often mention papers your should reference, referred to only by their PubMed ID (PMID). Find a way to import them into Zotero (with their citation metadata) and organize them intelligently.*
 >
-> The compiled PMIDs: 24934519, 25159158, 25682101, 25702159, 25865002, 26025621, 26212266, 26246354
+> The compiled PMIDs: 30539454, 31596559, 31978343, 32293557, 40493376, 41040331
 
 ::: callout-tip
 ##### Green flag criteria:
 
 Raise the green flag when *everyone at your table* has:
 
--   all 8 articles in Zotero
+-   all 6 articles in Zotero
 -   at least some are in a collection and/or have a (manually added) tag
 :::
 
@@ -210,7 +212,7 @@ Zotero is good at importing articles by identifiers like DOIs or, in this case, 
 
 Raise the green flag when *everyone at your table* has:
 
--   all 8 articles in Zotero
+-   all 4 articles in Zotero
 -   at least some are in a collection and/or have a tag
 :::
 
@@ -302,7 +304,7 @@ PubMed has different ways to update you of new search hits. It can send you an e
 2\) Search something. Anything will do. The "Advanced" search option makes searching by a specific journal, author, or the like simpler; however, a generic keyword to start off is fine.
 
 ::: aside
-The TMC Library has a [good overview](https://libguides.library.tmc.edu/PubMed/Advanced) of the Advanced Search features of PubMed.
+Mount Sinai has a [good overview](https://libguides.mssm.edu/pubmed/advanced_search) of the Advanced Search features of PubMed.
 :::
 
 3\) Click "Create RSS" under the search bar:\
@@ -365,85 +367,115 @@ This workshop was developed as a capstone project for the Biomedical Educator Ce
 
 The [Software Carpentry](https://software-carpentry.org/lessons/index.html) workshops I attended at the University of Michigan, led by Dr. Pat Schloss and others, as well as several Zotero-centric conversations with my friend Kevin Jiang, were other major sources of inspiration for the design of this workshop.
 
-This document is hosted on GitHub Pages and was authored in RStudio with [Quarto](https://quarto.org/docs/get-started/hello/rstudio.html), which also features Zotero integration!
+The instructions in this document were written according to Zotero version 8.0-beta.10+5a96e7c90 running on macOS Sequoia 15.6.1. The document is [hosted on GitHub Pages](https://github.com/mrkady/zotero) and was authored in RStudio with [Quarto](https://quarto.org/docs/get-started/hello/rstudio.html)—which also features Zotero integration!
 
 ## Activity #???: Bonus Activities for Overachievers & Suggested Topics for Further Exploration {.unlisted}
 
 What follows is a laundry list of other things Zotero is good for, beyond the scope of this workshop. Feel free to tackle them if you finish the activities early, find the activities uninspiring, or on your own after the workshop. They progress in roughly increasing order of difficulty and esotericsim.
 
-### Citing items in Microsoft Word
+::: {.callout-note collapse="true"}
+### Citing items in Microsoft Word (click to expand)
 
-An obvious and regrettable time-constraint-induced gap in this workshop is the actual citing of references in a word processor like Microsoft Word. Citing in Microsoft Word with Zotero is easy with [the plugin](https://www.zotero.org/support/word_processor_plugin_usage); Zotero even has plugins for [other apps like LibreOffice and Google Docs](https://www.zotero.org/support/word_processor_integration) and integration with other markdown-based systems like R Markdown or Quarto. The plugins are bundled with Zotero itself, so you don't have to download anything extra. In the case of Microsoft Word, a new *Zotero* tab will appear at the end of the ribbon at the top. [The Documentation can help you from there.](https://www.zotero.org/support/word_processor_plugin_usage)
+An obvious and regrettable time-constraint-induced gap in this workshop is the actual citing of references in a word processor like Microsoft Word. Citing in Microsoft Word with Zotero is easy with the plugin; Zotero even has plugins for [other apps like LibreOffice and Google Docs](https://www.zotero.org/support/word_processor_integration) and integration with other markdown-based systems like R Markdown or Quarto. The plugins are bundled with Zotero itself, so you don't have to download anything extra. In the case of Microsoft Word, a new *Zotero* tab will appear at the end of the ribbon at the top. [The documentation can help you from there.](https://www.zotero.org/support/word_processor_plugin_usage)
 
 Zotero knows how to follow the citation formats of different journals based on a library of Citation Style Language or .csl files. A few styles are loaded by default; all the rest are in the [Zotero Style Repository](https://www.zotero.org/styles), which is also accessible from the Zotero settings (in the menu bar, choose *Zotero* \> *Preferences/Settings...* \> *Cite* \> *Style Manager* \> *Get Additional Styles...*). These styles generally perform "correctly" with common item types that aren't missing metadata. They will likely be good enough for any manuscript submission before meeting the careful eye of the copy editor. Nevertheless, *as a rule I* *always give my automatically generated bibliographies a skim*—you'll be surprised what kinds of garbled metadata make it though the Zotero translators.
+:::
 
-### Hotkeyed and color-coded custom tags
+::: {.callout-note collapse="true"}
+### Hotkeyed and color-coded custom tags (click to expand)
 
 I have a very small set of highly used manual tags: *unread*, *read*, *fav*, etc. By right-clicking on a tag in the tag selector and choosing *Assign Color...* you can [assign a color and number-key hotkey to that tag](https://www.zotero.org/support/collections_and_tags#colored_tags). If an item has a colored tag, a corresponding colored circle will be displayed next to the title in the center panel. Application of the tag can be toggled with the assigned hotkey, making both the scanning and switching of colored tags very fast and convenient.
+:::
 
-### Creating footnotes in PowerPoint with Quick Copy and CSL styles
+::: {.callout-note collapse="true"}
+### Creating footnotes in PowerPoint with Quick Copy and CSL styles (click to expand)
 
 Sometimes you want to cite something in a presentation. I usually see this accomplished with teeny text in the bottom corner. The variety of citation styles used between and within presentations I have seen gives me the impression that most people are crafting them on-the-fly.
 
 There is a better way. [Zotero has a feature](https://www.zotero.org/support/creating_bibliographies#quick_copy) called ***Quick Copy***, which allows for copy-and-paste of simple bibliographies like those found in the bottom corner of a PowerPoint slide. Dragging items or selecting them and pressing Ctrl/Cmd+Shift+C will allow you to paste them anywhere else. The citation style used is dictated in the settings (in the menu bar, choose *Zotero* \> *Preferences/Settings...* \> *Export* \> *Quick Copy* \> *Item Format*). If the publicly available citation style files don't match your preferred format, consider [writing your own](https://www.zotero.org/support/dev/citation_styles/style_editing_step-by-step). Zotero has a built-in .csl editor, but the [CSL Visual Editor](https://editor.citationstyles.org/about/) available online is extremely user-friendly and feature rich.
 
-If your curious, [here is my personal style for Quick Copy](csl/mrk-quick-copy.csl), which follows an `Author(s), Journal Abbreviation, Year` format. I also have [one for Quick Copying identifiers](csl/mrk-pid.csl) (e.g., PMID, DOI) that I use for sharing references with coauthors within Microsoft Word comments, and one not for Quick Copy but which [adds the PMCID to the *Nature* citation style](csl/mrk-nature-pmcid.csl) that I use for NIH grant applications.[A nominal rule for citations in NIH grant applications (in fact, [the *only* rule for citations in NIH grant applications](https://grants.nih.gov/grants-process/write-application/how-to-apply-application-guide/format-attachments#citations)) is inclusion of the PMCID if it exists. With the disclaimer that I have never seen anyone care or get docked for this, it can be accomplished with Zotero. If importing from PubMed or PubMed Central, Zotero will bring in the PM(C)ID into the *Extra* field. For other items, a [Zotero plugin exists](https://github.com/retorquere/zotero-pmcid-fetcher) to add PM(C)IDs automatically upon import/edit or by right-click. A CSL file can [read data from the *Extra* field](https://www.zotero.org/support/kb/item_types_and_fields#citing_fields_from_extra) and thereby include the PMCID if it is present. That is all my custom CSL does; there is [another one available online](https://www.zotero.org/styles?q=id%3Anational-library-of-medicine-grant-proposals).]{.aside}
+If your curious, [here is my personal style for Quick Copy](csl/mrk-quick-copy.csl), which follows an `Author, Publication, Year` format. I also have [one for Quick Copying identifiers](csl/mrk-pid.csl) (e.g., PMID, DOI) that I use for sharing references with coauthors within Microsoft Word comments, and one not for Quick Copy but which [adds the PMCID to the *Nature* citation style](csl/mrk-nature-pmcid.csl) that I use for NIH grant applications.[A nominal rule for citations in NIH grant applications (in fact, [the *only* rule for citations in NIH grant applications](https://grants.nih.gov/grants-process/write-application/how-to-apply-application-guide/format-attachments#citations)) is inclusion of the PMCID if it exists. With the disclaimer that I have never seen anyone care or get docked for this, it can be accomplished with Zotero. If importing from PubMed or PubMed Central, Zotero will bring in the PM(C)ID into the *Extra* field. For other items, a [Zotero plugin exists](https://github.com/retorquere/zotero-pmcid-fetcher) to add PM(C)IDs automatically upon import/edit or by right-click. A CSL file can [read data from the *Extra* field](https://www.zotero.org/support/kb/item_types_and_fields#citing_fields_from_extra) and thereby include the PMCID if it is present. That is all my custom CSL does; there is [another one available online](https://www.zotero.org/styles?q=id%3Anational-library-of-medicine-grant-proposals).]{.aside}
+:::
 
-### More granular filtering with Saved Searches
+::: {.callout-note collapse="true"}
+### More granular filtering with Saved Searches (click to expand)
 
 Sometimes I want to just see all my notes, or all my attachments, or all journal articles which lack a DOI. The [*Advanced Search*](https://www.zotero.org/support/searching#advanced_search) option, accessed by selecting the magnifying glass ![](images/search.png){height="20"} next to the search bar, allows for more fine-tuned searching of your library based on one or multiple parameters. If you would like to repeatedly referenced these search criteria, you can [save an advanced search](https://www.zotero.org/support/searching#saved_searches) as a ***Saved Search*** by choosing the *Save Search* dialog. The saved search ![](images/saved-search.png){width="20"} will then sit below your collections in the collections pane.
+:::
 
-### Simulate a folder with all your PDFs with file manager Saved Searches
+::: {.callout-note collapse="true"}
+### Simulate a folder with all your PDFs with file manager Saved Searches (click to expand)
 
 One thing that I didn't like about Zotero at first, compared to my precious folder with hundreds of PDFs, was that, because of the way Zotero stores attachments, each file is stored in a separate 8-character subfolder within [Zotero's storage folder on your computer](https://www.zotero.org/support/zotero_data). This makes it a bit more cumbersome to retrieve the PDF to, say, email it to a collaborator.
 
 Thankfully, you can created a "Saved Search" in your file manager as well. While the steps will vary depending on the operating system, try searching for all PDFs within the Zotero storage folder and pinning/saving that search to your favorites. This saved search, which can then be further search, does well to approximate the one-big-folder lifestyle.
+:::
 
-### Data syncing with a Zotero account and attachment syncing with Zotero Storage (or other cloud storage)
+::: {.callout-note collapse="true"}
+### Library and attachment syncing with a Zotero account (click to expand)
 
 You may have seen a Zotero notification badgering you to [sync your data](https://www.zotero.org/support/sync) by setting up an account. Setting up a Zotero account online and linking it in Zotero (in the menu bar, choose *Zotero* \> *Preferences/Settings...* \> *Sync*) will allow syncing of your items with the ***Zotero Web Library***, allowing you to access the items anywhere.
 
 There is a caveat. The storage limit for a free Zotero account (300 MB) is adequate for your notes and their embedded images, but will run out if you try to sync every attachment. Therefore, I recommend unchecking *Sync full-text content*, *Sync attachment files in My Library using Zotero*, and *Sync attachment files in group libraries using Zotero storage*.
 
 If having not only the bibliographic data but the full-text and/or attachment/annotation data synced online or between multiple devices is valuable to you, consider [paying for Zotero Storage](https://www.zotero.org/storage) or storing the attachments outside of Zotero's storage (e.g., with OneDrive or Google Drive) by means of [Linked Files](https://www.zotero.org/support/attaching_files#stored_files_and_linked_files). I used to do that; however, if you only ever interact with the PDFs on one device it isn't worth it. When the time comes to upgrade computer, moving the library is as easy as [copy and paste](https://www.zotero.org/support/kb/transferring_a_library).
+:::
 
-### Custom file renaming
+::: {.callout-note collapse="true"}
+### Custom file renaming (click to expand)
 
-You may have noticed that if metadata is successfully retrieved with a PDF, Zotero automatically renames the PDF based on the metadata, by default following an `Author(s) - Year - Abbreviated Title.pdf` format. This can be changed. In the menu bar, choose *Zotero* \> *Preferences/Settings...* \> *General* \> *File Renaming* \> *Customize Filename Format...* and follow the rules laid out in [the Documentation](https://www.zotero.org/support/file_renaming).
+You may have noticed that if metadata is successfully retrieved with a PDF, Zotero automatically renames the PDF based on the metadata, by default following an `Author - Year - Title.pdf` format. This can be changed. In the menu bar, choose *Zotero* \> *Preferences/Settings...* \> *General* \> *File Renaming* \> *Customize Filename Format...* and follow the syntax laid out in [the documentation](https://www.zotero.org/support/file_renaming).
 
 If you're curious, my personal format is:
 
-```         
-{{firstCreator suffix=", "}} 
+``` default
+{{firstCreator suffix = ", "}} 
 {{if journalAbbreviation == ""}} 
-{{publicationTitle suffix=", "}} 
+{{publicationTitle suffix = ", "}} 
 {{else}} 
-{{journalAbbreviation suffix=", "}} 
+{{journalAbbreviation suffix = ", "}} 
 {{endif}} 
 {{if itemType == "preprint"}} 
-{{repository suffix=", "}} 
+{{repository suffix = ", "}} 
 {{endif}} 
-{{year suffix=". "}} 
+{{year suffix = ". "}} 
 {{if shortTitle == ""}} 
-{{title truncate="50"}} 
+{{title truncate = "50"}} 
 {{else}} 
-{{shortTitle truncate="50"}} 
+{{shortTitle truncate = "50"}} 
 {{endif}}
 ```
 
-which results in an `Author(s), Publication, Year. Abbreviated Title.pdf` format.
+which results in an `Author, Publication, Year. Title.pdf` format.
+:::
 
-### Finding related papers with Research Rabbit or Connected Papers
+::: {.callout-note collapse="true"}
+### Finding related papers with ResearchRabbit or Connected Papers (click to expand)
+
+Sometimes when I'm trying to familiarize myself with a new large body of work, I feel like I am reading *around* a topic while missing important elements of it, or I want to know if any important follow-up work has been done since the articles I'm reading were published. Usually Google Scholar does the trick, but sometimes I'm too clueless to know what to search. There are a few apps which, when given a paper or papers as input, will generate network graphs of relatedness based on citations or keywords. This can help you fill in gaps in your library.
+
+The one that I like the most is [ResearchRabbit](https://www.researchrabbit.ai/), which is free. You can create manual libraries or sync a library from Zotero of up to 100 items. ResearchRabbit will then map out *Similar Work*, *Earlier Work*, and *Later Work*, as well as connections between authors. There are lots of interesting features worth exploring.
+
+There are a few apps that do similar things. [Connected Papers](https://www.connectedpapers.com/) is one, but the free version limits the number of graphs per month.
+:::
+
+::: {.callout-note collapse="true"}
+### More sophisticated note-taking with Obsidian (click to expand)
 
 lorem ipsum
+:::
 
-### More sophisticated note-taking with Obsidian
-
-lorem ipsum
-
-### Collaborative libraries with Zotero Groups
+::: {.callout-note collapse="true"}
+### Collaborative libraries with Zotero Groups (click to expand)
 
 lorem ipsum
+:::
+
+::: {.callout-note collapse="true"}
+### Simpler institutional access with Libkey Nomad (click to expand)
+
+lorem ipsum
+:::
 
 ## References {.unlisted}
 
@@ -456,7 +488,7 @@ Some other useful websites and all the literature used for the cases.[Created—
 
 ### Activity #2
 
-::: {#refs-hallmarks}
+::: {#refs-activity2}
 :::
 
 #### Case A
@@ -472,4 +504,9 @@ Some other useful websites and all the literature used for the cases.[Created—
 #### Case C
 
 ::: {#refs-case2C}
+:::
+
+### Activity #4
+
+::: {#refs-activity4}
 :::
