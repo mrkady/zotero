@@ -5,7 +5,7 @@ author: "Mohamed R. Kady<br>kady@bcm.edu"
 published-title: "Workshop date"
 date: 2025-12-05
 abstract-title: "In brief"
-abstract: "Follow through the prompts in this document in conjunction with the workshop instructions to get acquainted with what Zotero can do to make your research life easier. This document is meant to be used in conjunction with the in-person workshop, but can also be used independently and referenced back to later. The URL will remain live indefinitely. Follow along to exactly what is covered in the workshop or tackle some of the independent bonus exercises if you'd like."
+abstract: "Follow through the prompts in this document in conjunction with the workshop instructions to get acquainted with what Zotero can do to make your research life easier. This document is meant to be used in conjunction with the in-person workshop, but can also be used independently or referenced back to later. The URL will remain live indefinitely. Follow along to exactly what is covered in the workshop or tackle some of the independent bonus exercises if you'd like."
 format:
   html:
     toc: true
@@ -29,7 +29,7 @@ bibliography:
   case2A: ref/case2A.bib
   case2B: ref/case2B.bib
   case2C: ref/case2C.bib
-  activity4: ref/activity4.bib
+  activity3: ref/activity3.bib
 filters:
   - multibib
 validate-yaml: false
@@ -134,7 +134,7 @@ To create a collection, you can click the ***New Collection...*** icon ![](image
 
 ***Tags*** ![](images/tags.png){height="20"} are much like tags anywhere else, short labels which often describe content in the form of keywords. You can click on tags in the Tag Selector in the bottom right to filter your library by those tags. Imports from PubMed and certain journal websites can bring with them keywords automatically. You can also manually add custom tags to an item by navigating to the ***Tags*** ![](images/tags.png){height="20"} icon in the Item Pane.
 
-Without further ado, the cases:[A very thorough overview of Zotero features can be found in its [documentation](https://www.zotero.org/support/start).]{.aside}
+Without further ado, the cases:[A thorough overview of all of Zotero features can be found in its [documentation](https://www.zotero.org/support/start).]{.aside}
 
 ### Cases for Activity #2
 
@@ -271,7 +271,36 @@ Without further ado, the case:
 
 ### Case for Activity #3
 
-lorem ipsum
+> *As it turns out, Hanahan hasn't written just one review on the Hallmarks of Cancer—he's written three. The original in 2000, an update in 2011, and most recently in 2022. Exercise your annotation chops to compare and contrast the hallmarks within and between the different articles.*
+
+I am not going to give you the PDFs or even links to the articles this time—use what you learned in the last case to get the items into Zotero following your preferred method and get to annotating!
+
+::: callout-tip
+#### Green flag criteria:
+
+Raise the green flag when *everyone at your table* has:
+
+-   All three Hallmarks papers as items in Zotero
+-   At least one note attached to any item as well as one standalone note
+-   A note with:
+    -   Text linked from an attachment
+    -   An image linked from an attachment
+    -   Manually entered text
+-   A note with links from multiple *different* attachments
+:::
+
+#### Tips for Case C:
+
+The first two articles are in *Cell*; the most recent is in *Cancer Discovery*. Otherwise, everything you need to know should be in the [Zotero Orientation, Part 2] above.
+
+#### Discussion points:
+
+-   Does making annotations in Zotero edit the PDF file itself?
+-   Is there a way to export Zotero annotations to the PDF?
+-   What happens when a PDF already has external annotations inside of it ([example PDF here](case3/Lazebnik, Nat Rev Cancer, 2010. What are the hallmarks of cancer.pdf))? Can you see them in Zotero? Can you edit them?
+-   Is there a setting to open PDFs in an external viewer by default?
+
+Overall, while Zotero's annotating features are solid, it is my experience that serious note-takers gravitate to using an external app which integrates with Zotero rather than Zotero's built-in tools. I discuss one of these in the bonus activities.
 
 ## Activity #4: Custom RSS Feed
 
@@ -379,12 +408,16 @@ What follows is a laundry list of other things Zotero is good for, beyond the sc
 An obvious and regrettable time-constraint-induced gap in this workshop is the actual citing of references in a word processor like Microsoft Word. Citing in Microsoft Word with Zotero is easy with the plugin; Zotero even has plugins for [other apps like LibreOffice and Google Docs](https://www.zotero.org/support/word_processor_integration) and integration with other markdown-based systems like R Markdown or Quarto. The plugins are bundled with Zotero itself, so you don't have to download anything extra. In the case of Microsoft Word, a new *Zotero* tab will appear at the end of the ribbon at the top. [The documentation can help you from there.](https://www.zotero.org/support/word_processor_plugin_usage)
 
 Zotero knows how to follow the citation formats of different journals based on a library of Citation Style Language or .csl files. A few styles are loaded by default; all the rest are in the [Zotero Style Repository](https://www.zotero.org/styles), which is also accessible from the Zotero settings (in the menu bar, choose *Zotero* \> *Preferences/Settings...* \> *Cite* \> *Style Manager* \> *Get Additional Styles...*). These styles generally perform "correctly" with common item types that aren't missing metadata. They will likely be good enough for any manuscript submission before meeting the careful eye of the copy editor. Nevertheless, *as a rule I* *always give my automatically generated bibliographies a skim*—you'll be surprised what kinds of garbled metadata make it though the Zotero translators.
+
+**Suggested Exercise:** Insert citation for the Hallmarks of Cancer paper from your Zotero library into a Microsoft Word document, using the *Nature* citation style.
 :::
 
 ::: {.callout-note collapse="true"}
 ### Hotkeyed and color-coded custom tags (click to expand)
 
-I have a very small set of highly used manual tags: *unread*, *read*, *fav*, etc. By right-clicking on a tag in the tag selector and choosing *Assign Color...* you can [assign a color and number-key hotkey to that tag](https://www.zotero.org/support/collections_and_tags#colored_tags). If an item has a colored tag, a corresponding colored circle will be displayed next to the title in the center panel. Application of the tag can be toggled with the assigned hotkey, making both the scanning and switching of colored tags very fast and convenient.
+I have a very small set of highly used manual tags: *unread*, *read*, *favorite*, etc. By right-clicking on a tag in the tag selector and choosing *Assign Color...* you can [assign a color and number-key hotkey to that tag](https://www.zotero.org/support/collections_and_tags#colored_tags). If an item has a colored tag, a corresponding colored circle will be displayed next to the title in the center panel. Application of the tag can be toggled with the assigned hotkey, making both the scanning and switching of colored tags very fast and convenient.
+
+**Suggested Exercise:** Assign a red color tag for unread papers and a green one for read papers, and apply them to every item in your Zotero library.
 :::
 
 ::: {.callout-note collapse="true"}
@@ -395,12 +428,16 @@ Sometimes you want to cite something in a presentation. I usually see this accom
 There is a better way. [Zotero has a feature](https://www.zotero.org/support/creating_bibliographies#quick_copy) called ***Quick Copy***, which allows for copy-and-paste of simple bibliographies like those found in the bottom corner of a PowerPoint slide. Dragging items or selecting them and pressing Ctrl/Cmd+Shift+C will allow you to paste them anywhere else. The citation style used is dictated in the settings (in the menu bar, choose *Zotero* \> *Preferences/Settings...* \> *Export* \> *Quick Copy* \> *Item Format*). If the publicly available citation style files don't match your preferred format, consider [writing your own](https://www.zotero.org/support/dev/citation_styles/style_editing_step-by-step). Zotero has a built-in .csl editor, but the [CSL Visual Editor](https://editor.citationstyles.org/about/) available online is extremely user-friendly and feature rich.
 
 If your curious, [here is my personal style for Quick Copy](csl/mrk-quick-copy.csl), which follows an `Author, Publication, Year` format. I also have [one for Quick Copying identifiers](csl/mrk-pid.csl) (e.g., PMID, DOI) that I use for sharing references with coauthors within Microsoft Word comments, and one not for Quick Copy but which [adds the PMCID to the *Nature* citation style](csl/mrk-nature-pmcid.csl) that I use for NIH grant applications.[A nominal rule for citations in NIH grant applications (in fact, [the *only* rule for citations in NIH grant applications](https://grants.nih.gov/grants-process/write-application/how-to-apply-application-guide/format-attachments#citations)) is inclusion of the PMCID if it exists. With the disclaimer that I have never seen anyone care or get docked for this, it can be accomplished with Zotero. If importing from PubMed or PubMed Central, Zotero will bring in the PM(C)ID into the *Extra* field. For other items, a [Zotero plugin exists](https://github.com/retorquere/zotero-pmcid-fetcher) to add PM(C)IDs automatically upon import/edit or by right-click. A CSL file can [read data from the *Extra* field](https://www.zotero.org/support/kb/item_types_and_fields#citing_fields_from_extra) and thereby include the PMCID if it is present. That is all my custom CSL does; there is [another one available online](https://www.zotero.org/styles?q=id%3Anational-library-of-medicine-grant-proposals).]{.aside}
+
+**Suggested Exercise:** Use my personal style and Quick Copy to insert a footnote for the Hallmarks of Cancer paper into PowerPoint.
 :::
 
 ::: {.callout-note collapse="true"}
 ### More granular filtering with Saved Searches (click to expand)
 
 Sometimes I want to just see all my notes, or all my attachments, or all journal articles which lack a DOI. The [*Advanced Search*](https://www.zotero.org/support/searching#advanced_search) option, accessed by selecting the magnifying glass ![](images/search.png){height="20"} next to the search bar, allows for more fine-tuned searching of your library based on one or multiple parameters. If you would like to repeatedly referenced these search criteria, you can [save an advanced search](https://www.zotero.org/support/searching#saved_searches) as a ***Saved Search*** by choosing the *Save Search* dialog. The saved search ![](images/saved-search.png){width="20"} will then sit below your collections in the collections pane.
+
+**Suggested Exercise:** Make a Saved Search for all items authored between 2010 and 2020.
 :::
 
 ::: {.callout-note collapse="true"}
@@ -409,6 +446,8 @@ Sometimes I want to just see all my notes, or all my attachments, or all journal
 One thing that I didn't like about Zotero at first, compared to my precious folder with hundreds of PDFs, was that, because of the way Zotero stores attachments, each file is stored in a separate 8-character subfolder within [Zotero's storage folder on your computer](https://www.zotero.org/support/zotero_data). This makes it a bit more cumbersome to retrieve the PDF to, say, email it to a collaborator.
 
 Thankfully, you can created a "Saved Search" in your file manager as well. While the steps will vary depending on the operating system, try searching for all PDFs within the Zotero storage folder and pinning/saving that search to your favorites. This saved search, which can then be further search, does well to approximate the one-big-folder lifestyle.
+
+**Suggested Exercise:** Create a saved search in your file manager which finds all PDFs in the Zotero storage library.
 :::
 
 ::: {.callout-note collapse="true"}
@@ -419,6 +458,8 @@ You may have seen a Zotero notification badgering you to [sync your data](https:
 There is a caveat. The storage limit for a free Zotero account (300 MB) is adequate for your notes and their embedded images, but will run out if you try to sync every attachment. Therefore, I recommend unchecking *Sync full-text content*, *Sync attachment files in My Library using Zotero*, and *Sync attachment files in group libraries using Zotero storage*.
 
 If having not only the bibliographic data but the full-text and/or attachment/annotation data synced online or between multiple devices is valuable to you, consider [paying for Zotero Storage](https://www.zotero.org/storage) or storing the attachments outside of Zotero's storage (e.g., with OneDrive or Google Drive) by means of [Linked Files](https://www.zotero.org/support/attaching_files#stored_files_and_linked_files). I used to do that; however, if you only ever interact with the PDFs on one device it isn't worth it. When the time comes to upgrade computer, moving the library is as easy as [copy and paste](https://www.zotero.org/support/kb/transferring_a_library).
+
+**Suggested Exercise:** Set up a Zotero account and enable web syncing such that you can access your library by heading to <https://www.zotero.org/mylibrary>.
 :::
 
 ::: {.callout-note collapse="true"}
@@ -447,6 +488,8 @@ If you're curious, my personal format is:
 ```
 
 which results in an `Author, Publication, Year. Title.pdf` format.
+
+**Suggested Exercise:** Edit the default filename format to replace the hyphens with commas and test that it behaves as intended.
 :::
 
 ::: {.callout-note collapse="true"}
@@ -457,24 +500,36 @@ Sometimes when I'm trying to familiarize myself with a new large body of work, I
 The one that I like the most is [ResearchRabbit](https://www.researchrabbit.ai/), which is free. You can create manual libraries or sync a library from Zotero of up to 100 items. ResearchRabbit will then map out *Similar Work*, *Earlier Work*, and *Later Work*, as well as connections between authors. There are lots of interesting features worth exploring.
 
 There are a few apps that do similar things. [Connected Papers](https://www.connectedpapers.com/) is one, but the free version limits the number of graphs per month.
+
+**Suggested Exercise:** Using the Hallmarks of Cancer paper as a starting point, using ResearchRabbit or Connected Papers to find a related paper and add it to your Zotero library.
 :::
 
 ::: {.callout-note collapse="true"}
 ### More sophisticated note-taking with Obsidian (click to expand)
 
-lorem ipsum
+There are all sorts of note-taking apps which feature Zotero integration, such as [Obsidian](https://obsidian.md/), a markdown-based tool which allows you to have links between notes, forming complex networks of ideas. Obsidian has a [Zotero Integration plugin](https://github.com/mgmeyers/obsidian-zotero-integration) which allows you to insert citation data and even notes from Zotero into your Obsidian notes. [You can get very sophisticated with this](https://medium.com/@alexandraphelan/an-updated-academic-workflow-zotero-obsidian-cffef080addd), so if a more bespoke and networked note-taking workflow interests you, I encourage you to look into it!
+
+**Suggested Exercise:** Use the Zotero Integration Obsidian plugin to insert a citation to the Hallmarks of Cancer paper, as well as its annotations, to an Obsidian note.
 :::
 
 ::: {.callout-note collapse="true"}
 ### Collaborative libraries with Zotero Groups (click to expand)
 
-lorem ipsum
+Usually, only the lead author manages the insertion of citations into a manuscript. However, you may have good reason to share a set of references with colleagues. There are of course many ways to do this, like sending a list of URLs or PMIDs, sending attached PDFs, etc. You can also [Zotero Groups](https://www.zotero.org/support/groups), which allows you to create publicly available and collaborative ***Group Libraries*** using references of your main library.
+
+First, you log into Zotero online and create the group on that site. Once you create a Group Library online, it will show up in your Zotero app under a new ***Group Libraries*** header in the Collections Pane. You can then drag any item into that library to add to it, and it will be automatically updated online. Others who add the library will also see it populate their Zotero app.
+
+For example, [here](https://www.zotero.org/groups/6332809/workshop_mrk) is a Group Library for all the references used in this workshop!
+
+**Suggested Exercise:** Create your own Group Library and add the Hallmarks of Cancer paper to it. Verify by checking to see that the library has appeared in the Zotero app.
 :::
 
 ::: {.callout-note collapse="true"}
 ### Simpler institutional access with Libkey Nomad (click to expand)
 
-lorem ipsum
+Sometimes it can be annoying to log into each publisher's website individually to access full-text articles, or even figure out *how* to log in. [Libkey Nomad](https://thirdiron.com/downloadnomad/) is a browser plugin which tries to get you to the full-text PDF in one click. It has integration with the TMC library's institutional access; you can learn more at [their website](https://libguides.library.tmc.edu/BCM/Study). While you will still have to sign in once per browser session, it generally works well after that.
+
+**Suggested Exercise:** Install Libkey Nomad, navigate to an article on PubMed (e.g., [this one](https://pubmed.ncbi.nlm.nih.gov/41317732/)), and use the "Download PDF" button to navigate straight to the PDF.
 :::
 
 ## References {.unlisted}
@@ -506,7 +561,7 @@ Some other useful websites and all the literature used for the cases.[Created—
 ::: {#refs-case2C}
 :::
 
-### Activity #4
+### Activity #3
 
-::: {#refs-activity4}
+::: {#refs-activity3}
 :::
