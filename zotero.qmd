@@ -171,12 +171,12 @@ Zotero is good at importing articles by identifiers like DOIs or, in this case, 
 > *You're enjoying your Saturday when your PI sends you an email with no subject line or body text, just a bunch of URLs to review. Find a way to import them into Zotero (with their citation metadata) and organize them intelligently.*
 >
 > The compiled links:\
-> <https://www.biorxiv.org/content/10.1101/2025.09.09.673536v1>\
 > [https://www.annualreviews.org/content/journals/10.1146/annurev-immunol-042718-041210](https://www.annualreviews.org/content/journals/10.1146/annurev-immunol-042718-041210?utm_campaign=shareaholic&utm_medium=email_this&utm_source=email){.uri}\
 > <https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2025.1607804/full>\
 > [https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giaf078/8232624](https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giaf078/8232624?login=false&utm_source=advanceaccess&utm_campaign=gigascience&utm_medium=email){.uri}\
-> <https://www.neb.com/en-us/protocols/2012/09/13/protocol-for-taq-2x-master-mix-m0270>\
-> <https://www.nature.com/articles/s41579-025-01258-8>
+> <https://www.nature.com/articles/s41579-025-01258-8>\
+> <https://www.medrxiv.org/content/10.1101/2025.01.04.25319877v2>\
+> <https://www.neb.com/en-us/protocols/2012/09/13/protocol-for-taq-2x-master-mix-m0270>
 
 ::: callout-tip
 ##### Green flag criteria:
