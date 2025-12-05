@@ -139,38 +139,7 @@ Without further ado, the cases:[A thorough overview of all of Zotero features ca
 ### Cases for Activity #2
 
 :::: {.callout-note collapse="true"}
-#### Case A: Importing from PDFs (click to expand)
-
-> *You're preparing for your QE and you've been sent a bunch of "very important literature" to review by your mentor in the form of email attachments. They are all PDFs of a range of topics and item types. Find a way to import them into Zotero (with their citation metadata) and organize them intelligently.*
->
-> [Click here to download caseA.zip (`r paste(ceiling(file.size("caseA.zip")/(1000 * 1000)), "MB")`).](caseA.zip)
-
-::: callout-tip
-##### Green flag criteria:
-
-Raise the green flag when *everyone at your table* has:
-
--   all 8 PDFs in Zotero
--   at least 7 have bibliographic data associated with them (a parent item)
--   at least some are in a collection and/or have a tag
-:::
-
-##### Tips for Case A:
-
-Zotero is good at importing PDFs, and can often acquire their metadata automatically. The simplest way to import PDFs is to drag them from your file manager to the center pane. Alternatively, you can click the ***Add Attachment*** icon ![](images/add-attachment.png){width="19" height="20"} at the top left of the center pane.
-
-Zotero will *usually* be able to create a parent item with the appropriate metadata from the PDF automatically, but not always. In this case, the attachment will not have a parent item, i.e., it will be "naked", without any bibliographic data attached to it. This is perfectly okay, but if you want to add metadata or make the item citable, you will need to get the info from another source (like a website) or create an item with the appropriate data manually (the ***New Item*** icon ![](images/add-item.png){width="19" height="20"} at the top left of the center pane). Dragging the attachment into that new item will pair it to that item.
-
-##### Discussion points:
-
--   Does Zotero automatically handle some types PDFs better than others?
--   What options might you try if a PDF does not import appropriately?
--   Are there other types of items which may be useful to have in a reference library besides journal articles?
--   Can you find where Zotero stores the added PDFs on your computer? Have they been renamed?
-::::
-
-:::: {.callout-note collapse="true"}
-#### Case B: Importing from PubMed (click to expand)
+#### Case A: Importing from PubMed (click to expand)
 
 > *You're drafting a review and your PI has marked it up with many comments and track changes. In their comments they often mention papers your should reference, referred to only by their PubMed ID (PMID). Find a way to import them into Zotero (with their citation metadata) and organize them intelligently.*
 >
@@ -181,11 +150,11 @@ Zotero will *usually* be able to create a parent item with the appropriate metad
 
 Raise the green flag when *everyone at your table* has:
 
--   all 6 articles in Zotero
+-   all 6 items in Zotero
 -   at least some are in a collection and/or have a (manually added) tag
 :::
 
-##### Tips for Case B:
+##### Tips for Case A:
 
 Zotero is good at importing articles by identifiers like DOIs or, in this case, PMIDs. The ***Add Item(s) by Identifier*** icon ![](images/add-by-identifier.png){width="19" height="20"} (magic wand at the top left of the center pane) is an easy way to add items by identifier. It can even handle multiple IDs at once if they are separated by commas.
 
@@ -197,30 +166,32 @@ Zotero is good at importing articles by identifiers like DOIs or, in this case, 
 ::::
 
 :::: {.callout-note collapse="true"}
-#### Case C: Importing from web links (click to expand)
+#### Case B: Importing from web links (click to expand)
 
-> *You're enjoying your Saturday when your PI sends you an email with no subject line or body text, just a bunch of URLs to some recently published journal articles. Find a way to import them into Zotero (with their citation metadata) and organize them intelligently.*
+> *You're enjoying your Saturday when your PI sends you an email with no subject line or body text, just a bunch of URLs to review. Find a way to import them into Zotero (with their citation metadata) and organize them intelligently.*
 >
 > The compiled links:\
 > <https://www.biorxiv.org/content/10.1101/2025.09.09.673536v1>\
 > [https://www.annualreviews.org/content/journals/10.1146/annurev-immunol-042718-041210](https://www.annualreviews.org/content/journals/10.1146/annurev-immunol-042718-041210?utm_campaign=shareaholic&utm_medium=email_this&utm_source=email){.uri}\
 > <https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2025.1607804/full>\
-> [https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giaf078/8232624](https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giaf078/8232624?login=false&utm_source=advanceaccess&utm_campaign=gigascience&utm_medium=email){.uri}
+> [https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giaf078/8232624](https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giaf078/8232624?login=false&utm_source=advanceaccess&utm_campaign=gigascience&utm_medium=email){.uri}\
+> <https://www.neb.com/en-us/protocols/2012/09/13/protocol-for-taq-2x-master-mix-m0270>\
+> <https://www.nature.com/articles/s41579-025-01258-8>
 
 ::: callout-tip
 ##### Green flag criteria:
 
 Raise the green flag when *everyone at your table* has:
 
--   all 4 articles in Zotero
+-   all 6 items in Zotero
 -   at least some are in a collection and/or have a tag
 :::
 
-##### Tips for Case C:
+##### Tips for Case B:
 
 Zotero imports from web links using a browser plugin called ***Zotero Connector***, which you can install from the Zotero website along with the program itself. Connector uses scripts called *translators* to extract item metadata from a variety of websites. The translators work very well on the sites where most biomedical research is published, including PubMed and those of Springer-Nature, ScienceDirect, Wiley, and many more.
 
-Zotero Connector works best if you pin it to the toolbar of your browser. In its dormant state, the icon will look like this ![](images/connector.png){height="20"}, but when you navigate to a website pertaining to a reference which can be translated into Zotero, the icon will change depending on the item type, e.g., ![](images/connector-paper.png){height="20"} for a journal article or ![](images/connector-chapter.png){height="20"} for a book chapter. **Seeing this icon change is a reliable indicator that the item will be imported correctly, and clicking it will add the item to your library.**
+Zotero Connector works best if you pin it to the toolbar of your browser. In its dormant state, the icon will look like this ![](images/connector.png){height="20"}, but when you navigate to a website pertaining to a reference which can be translated into Zotero, the icon will change depending on the item type, e.g., ![](images/connector-paper.png){height="20"} for a journal article or ![](images/connector-chapter.png){height="20"} for a book chapter. **Seeing this icon change is a reliable indicator that the item will be imported correctly, and clicking it will add the item to your library.** This of course does not apply if you are trying to add a webpage itself to your library.
 
 Zotero will *try* to add the PDF as well. In my experience, ensuring that you already have access to the article—say, though OpenAthens—*before* you click the icon is the best way to guarantee the PDF comes along. If that fails, you can download the PDF separately and attach it to the item via the "Add Attachment" option.
 
@@ -229,6 +200,37 @@ Zotero will *try* to add the PDF as well. In my experience, ensuring that you al
 -   Can you think of any websites or otherwise unconventional reference items you may want to add to your library? How does Zotero Connector fare in adding them to Zotero?
 -   What happens if you're on [a website with *multiple* reference items linked](https://journals.asm.org/toc/mbio/current)?
 -   Can you add items to your library from Zotero Connector if Zotero isn't open?
+::::
+
+:::: {.callout-note collapse="true"}
+#### Case C: Importing from PDFs (click to expand)
+
+> *You're preparing for your QE and you've been sent a bunch of "very important literature" to review by your mentor in the form of email attachments. They are all PDFs of a range of topics and item types. Find a way to import them into Zotero (with their citation metadata) and organize them intelligently.*
+>
+> [Click here to download caseC.zip (`r paste(ceiling(file.size("caseC.zip")/(1000 * 1000)), "MB")`).](caseC.zip)
+
+::: callout-tip
+##### Green flag criteria:
+
+Raise the green flag when *everyone at your table* has:
+
+-   all 8 PDFs in Zotero
+-   at least 7 have bibliographic data associated with them (a parent item)
+-   at least some are in a collection and/or have a tag
+:::
+
+##### Tips for Case C:
+
+Zotero is good at importing PDFs, and can often acquire their metadata automatically. The simplest way to import PDFs is to drag them from your file manager to the center pane. Alternatively, you can click the ***Add Attachment*** icon ![](images/add-attachment.png){width="19" height="20"} at the top left of the center pane.
+
+Zotero will *usually* be able to create a parent item with the appropriate metadata from the PDF automatically, but not always. In this case, the attachment will not have a parent item, i.e., it will be "naked", without any bibliographic data attached to it. This is perfectly okay, but if you want to add metadata or make the item citable, you will need to get the info from another source (like a website) or create an item with the appropriate data manually (the ***New Item*** icon ![](images/add-item.png){width="19" height="20"} at the top left of the center pane). Dragging the attachment into that new item will pair it to that item.
+
+##### Discussion points:
+
+-   Does Zotero automatically handle some types PDFs better than others?
+-   What options might you try if a PDF does not import appropriately?
+-   Are there other types of items which may be useful to have in a reference library besides journal articles?
+-   Can you find where Zotero stores the added PDFs on your computer? Have they been renamed?
 ::::
 
 Overall, Zotero is robust at importing many types of items from many types of sources. While different methods have their own nuances, just do whatever makes you most likely to actually add items. If you like, go ahead and drag all the PDFs from your personal literature collection into the center pane; Zotero can take it.
@@ -271,7 +273,7 @@ Without further ado, the case:
 
 ### Case for Activity #3
 
-> *As it turns out, Hanahan hasn't written just one review on the Hallmarks of Cancer—he's written three. The original in 2000, an update in 2011, and most recently in 2022. Exercise your annotation chops to compare and contrast the hallmarks within and between the different articles.*
+> *As it turns out, Hanahan hasn't written just one review on the Hallmarks of Cancer—he's written three. The original in 2000, an update in 2011 (which we already added), and most recently in 2022. Add the other two papers to your library and exercise your annotation chops to compare and contrast the hallmarks within and between the different articles.*
 
 I am not going to give you the PDFs or even links to the articles this time—use what you learned in the last case to get the items into Zotero using your method of choice and get to annotating!
 
@@ -289,7 +291,7 @@ Raise the green flag when *everyone at your table* has:
 -   a note with links from multiple *different* attachments
 :::
 
-#### Tips for Case C:
+#### Tips for Activity #3:
 
 The first two articles are in *Cell*; the most recent is in *Cancer Discovery*. Otherwise, everything you need to know should be in the [Zotero Orientation, Part 2] above.
 
@@ -298,7 +300,7 @@ The first two articles are in *Cell*; the most recent is in *Cancer Discovery*. 
 -   Does making annotations in Zotero edit the PDF file itself?
 -   Is there a way to export Zotero annotations to the PDF?
 -   What happens when a PDF already has external annotations inside of it ([example PDF here](case3/Lazebnik,%20Nat%20Rev%20Cancer,%202010.%20What%20are%20the%20hallmarks%20of%20cancer.pdf))? Can you see them in Zotero? Can you edit them?
--   Is there a setting to open PDFs in an external viewer by default?
+-   Is there a setting to open PDFs in a different program by default?
 
 Overall, while Zotero's annotating features are solid, it is my experience that serious note-takers gravitate to using an external app which integrates with Zotero rather than Zotero's built-in tools. I discuss one of these in the bonus activities.
 
