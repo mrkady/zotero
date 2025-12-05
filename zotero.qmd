@@ -345,15 +345,15 @@ Mount Sinai has a [good overview](https://libguides.mssm.edu/pubmed/advanced_sea
 
 5\) Copy the RSS feed link and return to Zotero.
 
-6\) On the menu bar, navigate to *File* \> *New Library* \> *New Feed* \> *From URL...*
+6\) On the menu bar, navigate to *File* \> *New Feed* \> *From URL...*
 
-7\) Paste the URL into the appropriate field. The title will automatically populate. Hit "OK".
+7\) Paste the URL into the appropriate field. In a few seconds the title will automatically populate. Hit "OK".
 
 ::: aside
 Under "Advanced Options", I typically change the update frequency to every 24 hours, as the default (every 2 hours) feels excessive, but that's just my personal preference.
 :::
 
-8\) Voila! There is now a new category in your Collections Pane, ***Feeds*** ![](images/feeds.png){height="20"}, which contains your custom feed ![](images/feed.png){height="20"}. Unread feed items appear in **bold**, and since the feed is brand new, it now contains up to 100 bolded items. You'll just have to trust me that, as new search hits come in, they'll show up in your feeds; feeds with new hits have their names in the Collections Pane marked in **bold**.
+8\) Voila! There is now a new category in your Collections Pane, ***Feeds*** ![](images/feeds.png){height="20"}, which contains your custom feed ![](images/feed.png){height="20"}. Unread feed items appear in **bold**, and since the feed is brand new, it now contains up to 100 bolded items. You'll just have to trust me that, as new search hits come in, they'll show up in your feeds; feeds with new hits have their names in the Collections Pane marked in bold.
 
 Items can be marked as read in a few different ways, and as new search hits arise they will appear at the top of the list in bold. When an item in the feed is selected, the Item Pane lists all the info needed to judge whether an article is worth taking a closer look at, like the abstract, as well as links to the PubMed entry and the DOI.
 
@@ -407,7 +407,7 @@ This workshop was developed as a capstone project for the Biomedical Educator Ce
 
 The [Software Carpentry](https://software-carpentry.org/lessons/index.html) workshops I attended at the University of Michigan, led by Dr. Pat Schloss and others, as well as several Zotero-centric conversations with my friend Kevin Jiang, were other major sources of inspiration for the design of this workshop.
 
-The instructions in this document were written according to Zotero version 8.0-beta.10+5a96e7c90 running on macOS Sequoia 15.6.1. The document is [hosted on GitHub Pages](https://github.com/mrkady/zotero) and was authored in RStudio with [Quarto](https://quarto.org/docs/get-started/hello/rstudio.html)—which also features Zotero integration!
+The instructions in this document were written according to Zotero version 8.0-beta.19+b9ef88d4f running on macOS Sequoia 15.6.1. The document is [hosted on GitHub Pages](https://github.com/mrkady/zotero) and was authored in RStudio with [Quarto](https://quarto.org/docs/get-started/hello/rstudio.html)—which also features Zotero integration!
 
 ## Activity #???: Bonus Activities for Overachievers & Suggested Topics for Further Exploration {.unlisted}
 
@@ -485,6 +485,8 @@ which results in an `Author, Publication, Year. Title.pdf` format.
 ### Simpler institutional access with Libkey Nomad (click to expand)
 
 Sometimes it can be annoying to log into each publisher's website individually to access full-text articles, or even figure out *how* to log in. [Libkey Nomad](https://thirdiron.com/downloadnomad/) is a browser plugin which tries to get you to the full-text PDF in one click. It has integration with the TMC library's institutional access; you can learn more at [their website](https://libguides.library.tmc.edu/BCM/Study). While you will still have to sign in once per browser session, it generally works well after that.
+
+There is also a way to configure [TMC library locator links for Zotero](https://www.zotero.org/support/locate) as well as [proxies for Zotero Connector](https://www.zotero.org/support/connector_preferences#proxies).
 
 **Suggested Exercise:** Install Libkey Nomad, navigate to an article on PubMed (e.g., [this one](https://pubmed.ncbi.nlm.nih.gov/41317732/)), and use the "Download PDF" button to navigate straight to the PDF.
 :::
